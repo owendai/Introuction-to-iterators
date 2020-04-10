@@ -3,3 +3,77 @@ employees = ['Nick','Lore']
 
 for employee in employees:
 print(employee)
+
+
+We can iterate over a string using a for loop
+
+for letter in 'DataCamp':
+  print(letter)
+  
+ We can iterate over a range object using a for loop
+ 
+ for i in range(4):
+  print(i)
+  
+  
+  Iterators VS. iterables 
+  Iterable
+    Examples: lists, strings, dictionaries, file connections 
+    def: an object with an associated iter() method 
+    Applying iter() to an iterable creates an iterator 
+    - Iterator 
+    Produces next value with next()
+    
+    Iterating over iterables: next()
+    
+    word= 'Da'
+    it = iter(word)
+    
+    next(it)
+    
+   D
+   next(it)
+   a
+   StopIteration
+   
+  # Iterating at once with*
+   it =iter(word)
+   print(*it)
+   D a t a
+   
+   print(*it)
+   no more values to go through!
+   
+   #Iterating over dictionaries 
+   pythonistas ={'hugo': 'owen-dai', 'franics': 'castro'}
+    for key, value in pythonistas.items():
+      print(key, value) 
+      
+     #Iterating over file connections
+      
+  file = open('file.txt')
+  it =iter(file)
+  print(next(it))
+  This is the first line.
+  print(next(it))
+  This is the first line.
+      
+      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
