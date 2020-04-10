@@ -1,0 +1,5 @@
+We can iterate over a list using a for loop
+employees = ['Nick','Lore']
+
+for employee in employees:
+print(employee)
